@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/immetti"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"
@@ -16,20 +16,38 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/bottone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="bottone"
+        tools:layout_editor_absoluteX="98dp"
+        tools:layout_editor_absoluteY="449dp" />
+
+    <Button
+        android:id="@+id/annulla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="annulla"
+        tools:layout_editor_absoluteX="227dp"
+        tools:layout_editor_absoluteY="449dp" />
+
     <ListView
         android:id="@+id/ListaStati"
-        android:divider="@color/purple_500"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-
         android:layout_marginStart="1dp"
-        android:layout_marginTop="1dp"
+
         android:layout_marginEnd="1dp"
+        android:divider="@color/purple_500"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
 
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+    </ListView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
